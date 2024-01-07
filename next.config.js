@@ -6,6 +6,13 @@ const nextConfig = {
             'another-domain.com',
             // Add more domains as needed
         ],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'res.cloudinary.com',
+                pathname: '**',
+            },
+        ],
     },
 }
 
