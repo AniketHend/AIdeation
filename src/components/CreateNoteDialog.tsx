@@ -37,7 +37,6 @@ const CreateNoteDialog = (props: Props) => {
       return response.data;
     },
   });
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (input === "") {
@@ -90,7 +89,11 @@ const CreateNoteDialog = (props: Props) => {
             <Button
               type="submit"
               className="bg-green-600"
+              disabled={createNotebook.isPending}
             >
+              {createNotebook.isPending && (
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+              )}
               Create
             </Button>
           </div>

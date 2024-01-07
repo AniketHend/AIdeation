@@ -22,6 +22,7 @@ export async function POST(req: Request) {
     });
   }
   const image_url = await generateImage(image_description);
+  
   if (!image_url) {
     return new NextResponse("failed to generate image ", {
       status: 500,

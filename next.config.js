@@ -1,29 +1,26 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        reactStrictMode: true,
         domains: [
             'oaidalleapiprodscus.blob.core.windows.net',
-            'another-domain.com',
-            "randomuser.me",
-            "firebasestorage.googleapis.com",
+            // 'another-domain.com',
+            // "randomuser.me",
+            "firebasestorage.googleapis.com"
             // Add more domains as needed
         ],
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'res.cloudinary.com',
+                hostname: 'oaidalleapiprodscus.blob.core.windows.net',
                 pathname: '**',
             },
         ],
-        webp: {
-            preset: "default",
-            quality: 100,
-        },
-        i18n: {
-            locales: ["en", "it"],
-            defaultLocale: "en",
-        },
+    },
+    reactStrictMode: true,
+    //Internationalization
+    i18n: {
+        locales: ["en", "it"],
+        defaultLocale: "en",
     },
 }
 

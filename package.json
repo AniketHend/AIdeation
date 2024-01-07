@@ -37,7 +37,8 @@
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7",
     "tiptap": "^1.32.2",
-    "typewriter-effect": "^2.21.0"
+    "typewriter-effect": "^2.21.0",
+    "webp-converter": "^2.3.3"
   },
   "devDependencies": {
     "@types/node": "^20",
